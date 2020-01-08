@@ -1,12 +1,15 @@
-# Analysis of Hotel Group Rates for 59 U.S. Markets
-## Background:
-The purpose of this project is to analyze group rate pricing at hotels in 59 U.S. markets.  Demand for hotel rooms is generally segregated between leisure travelers and group travelers.  Group travel consists of a variety of organizations including corporate/business, membership-driven associations, social/hobby groups, military, educational, religious, fraternal and ethnic groups.  Although room rates for groups are generally lower than for leisure guests, group travel is valued by hotels because of the longer booking window, which provides hotels with an understanding of future demand.  Group travelers also have higher out-of-the-room spend than leisure travelers for food and beverage, meeting room rental and other amenities offered by hotels, which increases the key hospitality metric of Total Revenue Per Available Room.  [To add – profitability from room revenue that rates represent and importance of protecting the rate for future profitability.  Define ADR in this paragraph.]
-For the meeting planner, who is planning travel arrangements for a group, the selection of a destination is one of the most important decisions among a variety that must be made in a complex workflow.  Destinations are ranked as Tier 1, Tier 2 and so forth, with Tier 1 markets commanding the highest room rates.  Tier 1 markets consist of Washington, D.C., New York, NY, Las Vegas, NV, San Francisco, CA and several other locations.  Meeting planners generally must balance demands from a variety of stakeholders within their organizations, including the organizational leadership, employees or attendees, whom they may need to attract to the meeting.  The selection criteria for a destination includes the room rates, geographic location, city amenities, airport capacity, hotel supply and amenities and weather.  Of these criteria, the room rates are often near the top of the selection criteria in terms of importance, because of the proportion of total meeting costs the room rates represent.  
+# Analysis of Hotel Room Rates
+## Motivation
+I work for a company that has built an online platform for meeting planners to source and book hotels for group travel based on specified criteria.  In general, hotels market to two types of customers:
+•	Leisure travelers cons ist of individuals or groups of fewer than 10 people who typically book rooms on a short-term basis
+•	Group travelers consist of 10 more people who book farther in advance
+Unlike leisure travel, group rooms cannot be booked online, and there is limited visibility into pricing for group rooms.  Hotel pricing is dynamic due to the perishable inventory, and hotels use yield management strategies to optimize rate and occupancy.  There is no central platform for buyers and sellers to exchange information on pricing, availability and buying criteria.  My company is addressing the booking inefficiencies by automating the search process with software.  I wanted to analyze pricing patterns for group rates and answer the following questions: 
+	How can you assess value when comparing room rates for different destinations?  
+	 How do rates vary by region over time?  
+	 Is there a relationship between group and leisure room rates?
+  
 
-## Data Questions:  
-1.	Where can meeting planners get the best value for room rates among these 59 locations?  
-2.	How much does location and time of year affect the pricing?  
-3.	How does pricing vary among markets in the Tier 1, Tier 2, Tier 3 and other locations?
+## Data  
+To answer these questions, I used daily room rate pricing data from 2018 for 58 U.S. regions.  This data was purchased from a third party and provided to me by my company.  I aggregated the data by month and region to analyze patterns for the year.  
 
-In this project, I analyzed the group rates at 59 destinations for hotels in the Luxury/Upper Upscale hotel segment.  My data included group room revenue and group room nights (demand) by day from 12/1/2017 – 12/31/2018.  The daily data allowed me to aggregate the data and calculate the Average Daily Rate (“ADR”) for different subsets.  I aggregated the data in the following:
-
+## Analytical Approach
